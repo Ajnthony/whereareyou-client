@@ -21,10 +21,3 @@ This page is a community forum for users, where anyone can talk about anything.
 ## Authentication
 
 Anonymous users can browse both pages as they want to, but they'll need to register and sign in to post things.
-
-<details>
-<summary>In short:</summary>
-```js
-...Please tell me who you are.
-```
-</details>
