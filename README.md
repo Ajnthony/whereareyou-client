@@ -24,7 +24,7 @@ Anonymous users can browse both pages as they want to, but they'll need to regis
 
 <details>
 <summary>In short:</summary>
-```
+```js
 ...Please tell me who you are.
 ```
 </details>
