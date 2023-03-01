@@ -1,10 +1,11 @@
 import {useEffect} from 'react';
+import {logger} from 'helpers';
 
 import HomeScreen from 'components/screens/home';
 
 const App = () => {
   useEffect(() => {
-    console.log('Running app version:', process.env.REACT_APP_VERSION);
+    logger('Running app version:', process.env.REACT_APP_VERSION);
   }, []);
 
   return (

@@ -1,0 +1,200 @@
+export const users = [
+  {
+    id: 1,
+    pet: [1, 20],
+    first_name: 'Flossi',
+    last_name: 'Wand',
+    display_name: 'fwand0',
+    email: 'fwand0@addtoany.com',
+    profile_url: 'http://dummyimage.com/250x250.png/cc0000/ffffff',
+    bio: 'Pre-emptive zero administration service-desk',
+    address: {address_line_1: '79293 Mayer Hill', zip_code: '33421'},
+    is_staff: false,
+    is_active: true,
+    is_admin: false,
+    is_moderator: false
+  },
+  {
+    id: 2,
+    pet: [2, 19],
+    first_name: 'Sheba',
+    last_name: 'Dairton',
+    display_name: 'sdairton1',
+    email: 'sdairton1@cam.ac.uk',
+    profile_url: 'http://dummyimage.com/250x250.png/5fa2dd/ffffff',
+    bio: 'Persevering value-added attitude',
+    address: {
+      address_line_1: '96 Ilene Center',
+      address_line_2: 'Suite 95',
+      state: 'TX',
+      country: 'United States',
+      zip_code: '78230'
+    },
+    is_staff: false,
+    is_active: false,
+    is_admin: true,
+    is_moderator: false
+  },
+  {
+    id: 3,
+    pet: [3, 18],
+    first_name: 'Iris',
+    last_name: 'Allin',
+    display_name: 'iallin2',
+    email: 'iallin2@washington.edu',
+    profile_url: 'http://dummyimage.com/250x250.png/ff4444/ffffff',
+    bio: 'Cloned incremental contingency',
+    address: {address_line_1: '45251 Vermont Crossing', zip_code: '45419'},
+    is_staff: false,
+    is_active: false,
+    is_admin: false,
+    is_moderator: false
+  },
+  {
+    id: 4,
+    pet: [4, 17, 16],
+    first_name: 'Deni',
+    last_name: 'Firmin',
+    display_name: 'dfirmin3',
+    email: 'dfirmin3@last.fm',
+    profile_url: 'http://dummyimage.com/250x250.png/dddddd/000000',
+    bio: 'Business-focused asynchronous collaboration',
+    address: {
+      address_line_1: '763 Pine View Way',
+      address_line_2: 'PO Box 96871',
+      state: 'NJ',
+      country: 'United States',
+      zip_code: '08603'
+    },
+    is_staff: false,
+    is_active: true,
+    is_admin: false,
+    is_moderator: false
+  },
+  {
+    id: 5,
+    pet: [5],
+    first_name: 'Anni',
+    last_name: 'Osichev',
+    display_name: 'aosichev4',
+    email: 'aosichev4@ustream.tv',
+    profile_url: 'http://dummyimage.com/250x250.png/cc0000/ffffff',
+    bio: 'Public-key eco-centric project',
+    address: {
+      address_line_1: '894 Fisk Park',
+      address_line_2: 'Suite 10',
+      state: 'TX',
+      country: 'United States',
+      zip_code: '77388'
+    },
+    is_staff: false,
+    is_active: true,
+    is_admin: true,
+    is_moderator: false
+  },
+  {
+    id: 6,
+    pet: [6, 15],
+    first_name: 'Clayborn',
+    last_name: 'Gatrill',
+    display_name: 'cgatrill5',
+    email: 'cgatrill5@globo.com',
+    profile_url: 'http://dummyimage.com/250x250.png/5fa2dd/ffffff',
+    bio: 'Down-sized tertiary process improvement',
+    address: {
+      address_line_1: '5198 Hagan Circle',
+      address_line_2: 'Room 5',
+      state: 'NY',
+      country: 'United States',
+      zip_code: '10454'
+    },
+    is_staff: true,
+    is_active: true,
+    is_admin: false,
+    is_moderator: true
+  },
+  {
+    id: 7,
+    pet: [7, 8],
+    first_name: 'Obadias',
+    last_name: 'Pavlenko',
+    display_name: 'opavlenko6',
+    email: 'opavlenko6@phoca.cz',
+    profile_url: 'http://dummyimage.com/250x250.png/5fa2dd/ffffff',
+    bio: 'Horizontal intangible model',
+    address: {
+      address_line_1: '703 Roxbury Lane',
+      address_line_2: 'Suite 35',
+      state: 'IN',
+      country: 'United States',
+      zip_code: '46266'
+    },
+    is_staff: false,
+    is_active: true,
+    is_admin: true,
+    is_moderator: false
+  },
+  {
+    id: 8,
+    pet: [9, 14],
+    first_name: 'Freeland',
+    last_name: 'Bolland',
+    display_name: 'fbolland7',
+    email: 'fbolland7@discovery.com',
+    profile_url: 'http://dummyimage.com/250x250.png/cc0000/ffffff',
+    bio: 'Polarised encompassing standardization',
+    address: {
+      address_line_1: '3 Golf Drive',
+      address_line_2: '19th Floor',
+      state: 'NY',
+      country: 'United States',
+      zip_code: '11436'
+    },
+    is_staff: true,
+    is_active: true,
+    is_admin: true,
+    is_moderator: false
+  },
+  {
+    id: 9,
+    pet: [10, 13, 12],
+    first_name: 'Leigh',
+    last_name: 'Varvell',
+    display_name: 'lvarvell8',
+    email: 'lvarvell8@macromedia.com',
+    profile_url: 'http://dummyimage.com/250x250.png/cc0000/ffffff',
+    bio: 'Synergized fault-tolerant adapter',
+    address: {
+      address_line_1: '67 Tennyson Parkway',
+      address_line_2: 'Apt 276',
+      state: 'CA',
+      country: 'United States',
+      zip_code: '90025'
+    },
+    is_staff: false,
+    is_active: true,
+    is_admin: false,
+    is_moderator: true
+  },
+  {
+    id: 10,
+    pet: [11],
+    first_name: 'Daron',
+    last_name: 'Lindenboim',
+    display_name: 'dlindenboim9',
+    email: 'dlindenboim9@macromedia.com',
+    profile_url: 'http://dummyimage.com/250x250.png/dddddd/000000',
+    bio: 'Face to face bottom-line monitoring',
+    address: {
+      address_line_1: '8 Huxley Avenue',
+      address_line_2: 'Room 701',
+      state: 'TX',
+      country: 'United States',
+      zip_code: '75074'
+    },
+    is_staff: true,
+    is_active: true,
+    is_admin: false,
+    is_moderator: false
+  }
+];
