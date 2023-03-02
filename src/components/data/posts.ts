@@ -7,7 +7,8 @@ export const posts = [
     user: 9,
     date_created: '2022-07-20T15:06:30Z',
     details: {is_pinned: true, is_flagged: false, is_deleted: false, likes: 0},
-    category: 'vent'
+    category: 2,
+    views: 124
   },
   {
     id: 2,
@@ -17,7 +18,8 @@ export const posts = [
     user: 10,
     date_created: '2020-07-09T09:30:34Z',
     details: {is_pinned: true, is_flagged: false, is_deleted: false, likes: 7},
-    category: 'vent'
+    category: 2,
+    views: 643
   },
   {
     id: 3,
@@ -27,7 +29,8 @@ export const posts = [
     user: 5,
     date_created: '2022-07-10T00:47:51Z',
     details: {is_pinned: true, is_flagged: true, is_deleted: false, likes: 11},
-    category: 'vent'
+    category: 2,
+    views: 12
   },
   {
     id: 4,
@@ -38,7 +41,8 @@ export const posts = [
     date_created: '2021-12-01T01:44:02Z',
     date_updated: '12/2/2020',
     details: {is_pinned: true, is_flagged: true, is_deleted: true, likes: 7},
-    category: 'life'
+    category: 3,
+    views: 55
   },
   {
     id: 5,
@@ -48,7 +52,8 @@ export const posts = [
     date_created: '2021-07-26T18:59:10Z',
     date_updated: '9/6/2021',
     details: {is_pinned: true, is_flagged: false, is_deleted: false, likes: 9},
-    category: 'other'
+    category: 6,
+    views: 3
   },
   {
     id: 6,
@@ -59,7 +64,8 @@ export const posts = [
     date_created: '2022-10-08T10:22:21Z',
     date_updated: '10/2/2020',
     details: {is_pinned: true, is_flagged: false, is_deleted: false, likes: 0},
-    category: 'show-off'
+    category: 4,
+    views: 66
   },
   {
     id: 7,
@@ -70,7 +76,8 @@ export const posts = [
     date_created: '2022-04-27T07:10:04Z',
     date_updated: '4/25/2022',
     details: {is_pinned: true, is_flagged: false, is_deleted: false, likes: 8},
-    category: 'vent'
+    category: 2,
+    views: 40
   },
   {
     id: 8,
@@ -81,7 +88,8 @@ export const posts = [
     date_created: '2021-04-29T14:26:56Z',
     date_updated: '5/26/2022',
     details: {is_pinned: false, is_flagged: true, is_deleted: true, likes: 8},
-    category: 'other'
+    category: 6,
+    views: 25
   },
   {
     id: 9,
@@ -90,7 +98,8 @@ export const posts = [
     user: 3,
     date_created: '2022-08-21T20:26:35Z',
     details: {is_pinned: false, is_flagged: true, is_deleted: true, likes: 3},
-    category: 'vent'
+    category: 2,
+    views: 11
   },
   {
     id: 10,
@@ -100,7 +109,8 @@ export const posts = [
     user: 9,
     date_created: '2022-12-12T20:34:19Z',
     details: {is_pinned: true, is_flagged: true, is_deleted: true, likes: 12},
-    category: 'discussion'
+    category: 5,
+    views: 9
   },
   {
     id: 11,
@@ -111,7 +121,8 @@ export const posts = [
     date_created: '2021-07-13T15:40:34Z',
     date_updated: '2/9/2022',
     details: {is_pinned: false, is_flagged: true, is_deleted: false, likes: 1},
-    category: 'show-off'
+    category: 4,
+    views: 32
   },
   {
     id: 12,
@@ -122,7 +133,8 @@ export const posts = [
     date_created: '2022-01-03T04:07:40Z',
     date_updated: '1/30/2022',
     details: {is_pinned: true, is_flagged: false, is_deleted: true, likes: 0},
-    category: 'discussion'
+    category: 5,
+    views: 144
   },
   {
     id: 13,
@@ -132,7 +144,8 @@ export const posts = [
     user: 7,
     date_created: '2021-03-02T19:19:14Z',
     details: {is_pinned: true, is_flagged: true, is_deleted: true, likes: 12},
-    category: 'life'
+    category: 3,
+    views: 77
   },
   {
     id: 14,
@@ -142,7 +155,8 @@ export const posts = [
     user: 10,
     date_created: '2020-09-23T10:03:02Z',
     details: {is_pinned: false, is_flagged: false, is_deleted: true, likes: 1},
-    category: 'show-off'
+    category: 4,
+    views: 63
   },
   {
     id: 15,
@@ -154,7 +168,8 @@ export const posts = [
     date_created: '2020-07-29T02:52:50Z',
     date_updated: '11/28/2021',
     details: {is_pinned: false, is_flagged: true, is_deleted: true, likes: 5},
-    category: 'life'
+    category: 3,
+    views: 7
   },
   {
     id: 16,
@@ -165,7 +180,8 @@ export const posts = [
     date_created: '2020-06-19T00:07:43Z',
     date_updated: '7/18/2022',
     details: {is_pinned: false, is_flagged: false, is_deleted: true, likes: 1},
-    category: 'other'
+    category: 6,
+    views: 178
   },
   {
     id: 17,
@@ -176,7 +192,8 @@ export const posts = [
     date_created: '2021-10-18T16:19:56Z',
     date_updated: '4/5/2020',
     details: {is_pinned: true, is_flagged: true, is_deleted: false, likes: 3},
-    category: 'vent'
+    category: 2,
+    views: 89
   },
   {
     id: 18,
@@ -187,7 +204,8 @@ export const posts = [
     date_created: '2021-08-11T00:47:04Z',
     date_updated: '7/13/2020',
     details: {is_pinned: true, is_flagged: false, is_deleted: false, likes: 8},
-    category: 'show-off'
+    category: 3,
+    views: 11
   },
   {
     id: 19,
@@ -198,7 +216,8 @@ export const posts = [
     date_created: '2022-10-24T22:43:00Z',
     date_updated: '9/23/2021',
     details: {is_pinned: false, is_flagged: false, is_deleted: true, likes: 11},
-    category: 'discussion'
+    category: 4,
+    views: 6
   },
   {
     id: 20,
@@ -208,6 +227,7 @@ export const posts = [
     date_created: '2020-12-15T00:44:02Z',
     date_updated: '2/6/2023',
     details: {is_pinned: true, is_flagged: false, is_deleted: false, likes: 9},
-    category: 'discussion'
+    category: 4,
+    views: 15
   }
 ];

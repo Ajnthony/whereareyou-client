@@ -1,10 +1,10 @@
 import AnimalsList from 'components/animalsList';
+import AnimalsFilter from 'components/screens/animals/home/AnimalsFilter';
 
 const AnimalsScreen = () => {
   return (
     <div>
-      <h2>Why don't we add some filters here later.</h2>
-      <h3>Animals List</h3>
+      <AnimalsFilter />
       <AnimalsList />
     </div>
   );

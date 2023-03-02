@@ -11,6 +11,8 @@ import ForumHomeScreen from 'components/screens/forum/home';
 import LoginScreen from 'components/screens/auth/Login';
 import RegisterScreen from 'components/screens/auth/Register';
 import AboutScreen from 'components/screens/about';
+import AnimalDetailScreen from 'components/screens/animals/detail';
+import PostDetailScreen from 'components/screens/forum/post';
 
 const App = () => {
   useEffect(() => {
@@ -24,7 +26,9 @@ const App = () => {
         <Container maxWidth="xl">
           <Routes>
             <Route index path="/" element={<AnimalsScreen />} />
+            <Route index path="/animals/:animalId" element={<AnimalDetailScreen />} />
             <Route index path="/animals" element={<AnimalsScreen />} />
+            <Route path="/community/:postId" element={<PostDetailScreen />} />
             <Route path="/community" element={<ForumHomeScreen />} />
             <Route path="/about" element={<AboutScreen />} />
             <Route path="/login" element={<LoginScreen />} />

@@ -12,9 +12,11 @@ import CardMedia from '@mui/material/CardMedia';
 import Typography from '@mui/material/Typography';
 import Stack from '@mui/material/Stack';
 import FoundChip from 'components/reusables/FoundChip';
+import {useNavigate} from 'react-router-dom';
 
 const AnimalsList = () => {
   const [animalsList, setAnimalsList] = useState([]);
+  const navigate = useNavigate();
 
   useEffect(() => {
     logger('Displaying animals list');
@@ -26,7 +28,7 @@ const AnimalsList = () => {
       {animals.length ? (
         animalsList.map((animal) => (
           <Grid item xs={12} sm={6} md={4} xl={3} key={animal.id}>
-            <Card sx={{maxWidth: 350}}>
+            <Card sx={{maxWidth: 350}} onClick={() => navigate(`/animals/${animal.id}`)}>
               <CardActionArea>
                 <CardMedia component="img" height="200" image={animal.image} alt={animal.description} />
                 <CardContent>

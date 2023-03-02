@@ -1,11 +1,25 @@
-import React from 'react';
+import {useState} from 'react';
 import Posts from 'components/posts';
+import PostsFilter from 'components/screens/forum/home/PostsFilter';
 
 const ForumHomeScreen = () => {
+  const [selectedCategory, setSelectedCategory] = useState(1);
+  const [selectedSortOption, setSelectedSortOption] = useState(1);
+
   return (
     <div>
-      <h2>Let's add some filters here later</h2>
-      <Posts />
+      <PostsFilter
+        selectedCategory={selectedCategory}
+        setSelectedCategory={setSelectedCategory}
+        selectedSortOption={selectedSortOption}
+        setSelectedSortOption={setSelectedSortOption}
+      />
+      <Posts
+        selectedCategory={selectedCategory}
+        setSelectedCategory={setSelectedCategory}
+        selectedSortOption={selectedSortOption}
+        setSelectedSortOption={setSelectedSortOption}
+      />
     </div>
   );
 };
