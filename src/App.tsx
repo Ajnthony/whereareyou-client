@@ -1,7 +1,16 @@
 import {useEffect} from 'react';
 import {logger} from 'helpers';
+import Container from '@mui/material/Container';
+import {BrowserRouter as Router, Routes, Route} from 'react-router-dom';
 
-import HomeScreen from 'components/screens/home';
+import Header from 'components/header';
+import Footer from 'components/footer';
+import AnimalsScreen from 'components/screens/animals/home';
+import ErrorScreen from 'components/reusables/error';
+import ForumHomeScreen from 'components/screens/forum/home';
+import LoginScreen from 'components/screens/auth/Login';
+import RegisterScreen from 'components/screens/auth/Register';
+import AboutScreen from 'components/screens/about';
 
 const App = () => {
   useEffect(() => {
@@ -9,9 +18,22 @@ const App = () => {
   }, []);
 
   return (
-    <div className="App">
-      <h1>Hey</h1>
-      <HomeScreen />
+    <div className="App" style={{height: '100vh'}}>
+      <Router>
+        <Header />
+        <Container maxWidth="xl">
+          <Routes>
+            <Route index path="/" element={<AnimalsScreen />} />
+            <Route index path="/animals" element={<AnimalsScreen />} />
+            <Route path="/community" element={<ForumHomeScreen />} />
+            <Route path="/about" element={<AboutScreen />} />
+            <Route path="/login" element={<LoginScreen />} />
+            <Route path="/register" element={<RegisterScreen />} />
+            <Route path="*" element={<ErrorScreen />} />
+          </Routes>
+        </Container>
+        <Footer />
+      </Router>
     </div>
   );
 };
