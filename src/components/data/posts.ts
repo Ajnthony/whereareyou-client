@@ -8,7 +8,8 @@ export const posts = [
     date_created: '2022-07-20T15:06:30Z',
     details: {is_pinned: true, is_flagged: false, is_deleted: false, likes: 0},
     category: 2,
-    views: 124
+    views: 124,
+    likes: 10
   },
   {
     id: 2,
@@ -19,7 +20,8 @@ export const posts = [
     date_created: '2020-07-09T09:30:34Z',
     details: {is_pinned: true, is_flagged: false, is_deleted: false, likes: 7},
     category: 2,
-    views: 643
+    views: 643,
+    likes: 16
   },
   {
     id: 3,
@@ -30,7 +32,8 @@ export const posts = [
     date_created: '2022-07-10T00:47:51Z',
     details: {is_pinned: true, is_flagged: true, is_deleted: false, likes: 11},
     category: 2,
-    views: 12
+    views: 12,
+    likes: 9
   },
   {
     id: 4,
@@ -42,7 +45,8 @@ export const posts = [
     date_updated: '12/2/2020',
     details: {is_pinned: true, is_flagged: true, is_deleted: true, likes: 7},
     category: 3,
-    views: 55
+    views: 55,
+    likes: 17
   },
   {
     id: 5,
@@ -53,7 +57,8 @@ export const posts = [
     date_updated: '9/6/2021',
     details: {is_pinned: true, is_flagged: false, is_deleted: false, likes: 9},
     category: 6,
-    views: 3
+    views: 3,
+    likes: 20
   },
   {
     id: 6,
@@ -65,7 +70,8 @@ export const posts = [
     date_updated: '10/2/2020',
     details: {is_pinned: true, is_flagged: false, is_deleted: false, likes: 0},
     category: 4,
-    views: 66
+    views: 66,
+    likes: 4
   },
   {
     id: 7,
@@ -77,7 +83,8 @@ export const posts = [
     date_updated: '4/25/2022',
     details: {is_pinned: true, is_flagged: false, is_deleted: false, likes: 8},
     category: 2,
-    views: 40
+    views: 40,
+    likes: 1
   },
   {
     id: 8,
@@ -89,7 +96,8 @@ export const posts = [
     date_updated: '5/26/2022',
     details: {is_pinned: false, is_flagged: true, is_deleted: true, likes: 8},
     category: 6,
-    views: 25
+    views: 25,
+    likes: 8
   },
   {
     id: 9,
@@ -122,7 +130,8 @@ export const posts = [
     date_updated: '2/9/2022',
     details: {is_pinned: false, is_flagged: true, is_deleted: false, likes: 1},
     category: 4,
-    views: 32
+    views: 32,
+    likes: 9
   },
   {
     id: 12,
@@ -145,7 +154,8 @@ export const posts = [
     date_created: '2021-03-02T19:19:14Z',
     details: {is_pinned: true, is_flagged: true, is_deleted: true, likes: 12},
     category: 3,
-    views: 77
+    views: 77,
+    likes: 30
   },
   {
     id: 14,
@@ -181,7 +191,8 @@ export const posts = [
     date_updated: '7/18/2022',
     details: {is_pinned: false, is_flagged: false, is_deleted: true, likes: 1},
     category: 6,
-    views: 178
+    views: 178,
+    likes: 35
   },
   {
     id: 17,
@@ -193,7 +204,8 @@ export const posts = [
     date_updated: '4/5/2020',
     details: {is_pinned: true, is_flagged: true, is_deleted: false, likes: 3},
     category: 2,
-    views: 89
+    views: 89,
+    likes: 11
   },
   {
     id: 18,
@@ -217,7 +229,8 @@ export const posts = [
     date_updated: '9/23/2021',
     details: {is_pinned: false, is_flagged: false, is_deleted: true, likes: 11},
     category: 4,
-    views: 6
+    views: 6,
+    likes: 5
   },
   {
     id: 20,

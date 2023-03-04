@@ -15,7 +15,11 @@ export const animals = [
     tags: [
       {type: 'age', label: 'baby'},
       {type: 'breed', label: 'beagle'}
-    ]
+    ],
+    date_created: '2021-07-19T17:52:49Z',
+    date_updated: '2020-12-24T01:04:51Z',
+    views: 52,
+    likes: 23
   },
   {
     id: 2,
@@ -26,14 +30,17 @@ export const animals = [
     gender: 'Male',
     description:
       "This clever and seldom seen creature is a type of reptile. It's about the size of a t-rex, has six legs and a short, thick tail. They have a thin, delicate skin covered in small, smooth scales, which is usually either dark bronze, grey, dark silver or dark gold or a combination of these colors.",
-    species: 'cat',
+    species: 'dog',
     is_found: true,
     image:
       'https://images.unsplash.com/photo-1530466452118-d4462fb6f25d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8cGluc2NoZXJ8ZW58MHwwfDB8fA%3D%3D&auto=format&fit=crop&w=800&q=60',
     tags: [
       {type: 'age', label: 'baby'},
       {type: 'breed', label: 'minipin'}
-    ]
+    ],
+    date_created: '2021-01-12T09:31:04Z',
+    date_updated: '2021-01-15T03:13:17Z',
+    views: 78
   },
   {
     id: 3,
@@ -51,7 +58,11 @@ export const animals = [
     tags: [
       {type: 'age', label: 'junior'},
       {type: 'breed', label: 'french bulldog'}
-    ]
+    ],
+    date_created: '2021-08-13T14:41:37Z',
+    date_updated: '2022-05-13T09:31:17Z',
+    views: 22,
+    likes: 2
   },
   {
     id: 4,
@@ -69,7 +80,11 @@ export const animals = [
     tags: [
       {type: 'age', label: 'senior'},
       {type: 'breed', label: 'chihuahua'}
-    ]
+    ],
+    date_created: '2023-01-14T19:15:39Z',
+    date_updated: '2020-05-21T08:55:04Z',
+    views: 89,
+    likes: 9
   },
   {
     id: 5,
@@ -87,7 +102,11 @@ export const animals = [
     tags: [
       {type: 'age', label: 'baby'},
       {type: 'breed', label: 'abyssinian'}
-    ]
+    ],
+    date_created: '2020-06-05T06:47:55Z',
+    date_updated: '2023-01-16T05:16:19Z',
+    views: 273,
+    likes: 16
   },
   {
     id: 6,
@@ -105,7 +124,11 @@ export const animals = [
     tags: [
       {type: 'age', label: 'senior'},
       {type: 'breed', label: 'abyssinian'}
-    ]
+    ],
+    date_created: '2021-10-01T16:04:10Z',
+    date_updated: '2021-03-02T19:23:17Z',
+    views: 11,
+    likes: 10
   },
   {
     id: 7,
@@ -123,7 +146,11 @@ export const animals = [
     tags: [
       {type: 'age', label: 'old'},
       {type: 'breed', label: 'chihuahua'}
-    ]
+    ],
+    date_created: '2020-08-13T15:13:35Z',
+    date_updated: '2022-05-14T07:16:37Z',
+    views: 6,
+    likes: 30
   },
   {
     id: 8,
@@ -141,7 +168,10 @@ export const animals = [
     tags: [
       {type: 'age', label: 'baby'},
       {type: 'breed', label: 'shorthair'}
-    ]
+    ],
+    date_created: '2020-09-09T16:53:00Z',
+    date_updated: '2021-05-17T07:56:29Z',
+    views: 15
   },
   {
     id: 9,
@@ -159,7 +189,11 @@ export const animals = [
     tags: [
       {type: 'age', label: 'baby'},
       {type: 'breed', label: 'tabby'}
-    ]
+    ],
+    date_created: '2022-10-01T16:24:08Z',
+    date_updated: '2021-01-31T13:26:31Z',
+    views: 87,
+    likes: 3
   },
   {
     id: 10,
@@ -177,7 +211,11 @@ export const animals = [
     tags: [
       {type: 'age', label: 'old'},
       {type: 'breed', label: 'turtle'}
-    ]
+    ],
+    date_created: '2022-08-02T19:55:09Z',
+    date_updated: '2021-07-18T12:01:04Z',
+    views: 88,
+    likes: 9
   },
   {
     id: 11,
@@ -195,7 +233,11 @@ export const animals = [
     tags: [
       {type: 'age', label: 'old'},
       {type: 'breed', label: 'sphynx'}
-    ]
+    ],
+    date_created: '2022-04-30T09:06:06Z',
+    date_updated: '2019-08-03T03:28:56Z',
+    views: 46,
+    likes: 73
   },
   {
     id: 12,
@@ -213,7 +255,11 @@ export const animals = [
     tags: [
       {type: 'age', label: 'junior'},
       {type: 'breed', label: 'minipin'}
-    ]
+    ],
+    date_created: '2021-03-27T22:05:31Z',
+    date_updated: '2019-07-13T12:32:39Z',
+    views: 64,
+    likes: 5
   },
   {
     id: 13,
@@ -230,7 +276,10 @@ export const animals = [
     tags: [
       {type: 'age', label: 'junior'},
       {type: 'breed', label: 'parrot'}
-    ]
+    ],
+    date_created: '2020-09-24T19:40:01Z',
+    date_updated: '2022-06-12T21:41:21Z',
+    views: 37
   },
   {
     id: 14,
@@ -248,7 +297,11 @@ export const animals = [
     tags: [
       {type: 'age', label: 'junior'},
       {type: 'breed', label: 'maine coon'}
-    ]
+    ],
+    date_created: '2020-07-19T16:38:45Z',
+    date_updated: '2022-04-17T22:34:15Z',
+    views: 97,
+    likes: 2
   },
   {
     id: 15,
@@ -266,7 +319,11 @@ export const animals = [
     tags: [
       {type: 'age', label: 'baby'},
       {type: 'breed', label: 'maine coon'}
-    ]
+    ],
+    date_created: '2021-03-12T22:44:30Z',
+    date_updated: '2021-07-25T16:36:35Z',
+    views: 71,
+    likes: 9
   },
   {
     id: 16,
@@ -284,7 +341,10 @@ export const animals = [
     tags: [
       {type: 'age', label: 'senior'},
       {type: 'breed', label: 'tabby'}
-    ]
+    ],
+    date_created: '2022-07-30T20:50:42Z',
+    date_updated: '2022-07-15T08:13:44Z',
+    views: 83
   },
   {
     id: 17,
@@ -302,7 +362,11 @@ export const animals = [
     tags: [
       {type: 'age', label: 'baby'},
       {type: 'breed', label: 'tabby'}
-    ]
+    ],
+    date_created: '2020-07-22T10:32:58Z',
+    date_updated: '2020-06-01T22:47:22Z',
+    views: 45,
+    likes: 22
   },
   {
     id: 18,
@@ -320,7 +384,11 @@ export const animals = [
     tags: [
       {type: 'age', label: 'baby'},
       {type: 'breed', label: 'tabby'}
-    ]
+    ],
+    date_created: '2020-06-10T10:24:38Z',
+    date_updated: '2021-04-30T00:15:06Z',
+    views: 487,
+    likes: 40
   },
   {
     id: 19,
@@ -338,7 +406,11 @@ export const animals = [
     tags: [
       {type: 'age', label: 'baby'},
       {type: 'breed', label: 'snake'}
-    ]
+    ],
+    date_created: '2022-02-06T22:45:56Z',
+    date_updated: '2019-06-20T08:25:52Z',
+    views: 32,
+    likes: 7
   },
   {
     id: 20,
@@ -356,6 +428,9 @@ export const animals = [
     tags: [
       {type: 'age', label: 'old'},
       {type: 'breed', label: 'lizard'}
-    ]
+    ],
+    date_created: '2022-06-03T15:07:03Z',
+    date_updated: '2019-06-25T01:41:33Z',
+    views: 90
   }
 ];
