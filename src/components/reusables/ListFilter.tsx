@@ -96,7 +96,7 @@ const ListFilter: React.FC<Props> = ({page, dataProps}) => {
           inputValue={isAnimalsFilter ? dataProps.tagInput : isForumFilter ? '' : ''}
           onInputChange={(e) => {
             if (isAnimalsFilter) {
-              dataProps.setTagInput(e.target.value);
+              dataProps.setTagInput((e.target as HTMLInputElement).value);
             }
           }}
           onChange={() => logger('Component changed')}

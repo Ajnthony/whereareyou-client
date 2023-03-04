@@ -1,6 +1,7 @@
 import {createSlice} from '@reduxjs/toolkit';
-import Api from 'src/api';
-import {logger} from 'src/helpers';
+import {Dispatch} from 'redux';
+import Api from 'api';
+import {logger} from 'helpers';
 
 const initialState = {
   users: []
@@ -22,7 +23,7 @@ export default slice.reducer;
 // Actions
 const {getUsers} = slice.actions;
 
-export const getAllUsers = () => async (dispatch) => {
+export const getAllUsers = () => async (dispatch: Dispatch) => {
   try {
     const slug = 'users/';
     const res = await Api(slug);
