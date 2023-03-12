@@ -21,13 +21,15 @@ interface Props {
   selectedFilterTypeOption: number;
   selectedSortOption: number;
   tagInput: string;
+  selectedTags: string[];
 }
 
 const AnimalsList: React.FC<Props> = ({
   selectedFilterStatusOption,
   selectedFilterTypeOption,
   selectedSortOption,
-  tagInput
+  tagInput,
+  selectedTags
 }) => {
   const [animalsList, setAnimalsList]: [any[], Function] = useState([]);
   const navigate = useNavigate();
@@ -42,11 +44,11 @@ const AnimalsList: React.FC<Props> = ({
       selectedFilterTypeOption,
       selectedSortOption,
       'animals',
-      tagInput,
+      selectedTags,
       categories.animals
     ) as Animal[];
     setAnimalsList([...animalsFilteredAndSorted]);
-  }, [selectedFilterStatusOption, selectedFilterTypeOption, selectedSortOption, tagInput]);
+  }, [selectedFilterStatusOption, selectedFilterTypeOption, selectedSortOption, selectedTags]);
 
   return (
     <Grid container spacing={1}>

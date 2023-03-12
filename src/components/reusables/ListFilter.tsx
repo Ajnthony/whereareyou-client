@@ -6,6 +6,7 @@ import MenuItem from '@mui/material/MenuItem';
 import {categories} from 'components/data/categories';
 import TextField from '@mui/material/TextField';
 import {logger} from 'helpers';
+import {TagObj} from 'components/types';
 
 interface Props {
   page: string;
@@ -91,16 +92,21 @@ const ListFilter: React.FC<Props> = ({page, dataProps}) => {
       {isAnimalsFilter ? (
         <Autocomplete
           disablePortal
+          multiple
+          limitTags={3}
+          value={dataProps.selectedTags}
           options={dataProps.tags ? dataProps.tags : []}
+          getOptionLabel={(option: TagObj) => option.label}
+          // value={dataProps.selectedTags}
           renderInput={(params) => <TextField {...params} label="Input tags" />}
-          inputValue={isAnimalsFilter ? dataProps.tagInput : isForumFilter ? '' : ''}
-          onInputChange={(e) => {
-            if (isAnimalsFilter) {
-              dataProps.setTagInput((e.target as HTMLInputElement).value);
-            }
+          inputValue={dataProps.tagInput}
+          // onInputChange={(e) => {
+          //   dataProps.setTagInput((e.target as HTMLInputElement).value);
+          // }}
+          onChange={(e, value) => {
+            dataProps.setSelectedTags(value);
           }}
-          onChange={() => logger('Component changed')}
-          sx={{width: 200}}
+          sx={{width: 300}}
         />
       ) : (
         ''

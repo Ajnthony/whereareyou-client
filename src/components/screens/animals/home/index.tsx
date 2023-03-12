@@ -8,7 +8,9 @@ const AnimalsScreen = () => {
   const [selectedFilterTypeOption, setSelectedFilterTypeOption] = useState(1);
   const [selectedSortOption, setSelectedSortOption] = useState(1);
   const [tagInput, setTagInput] = useState('');
+  const [selectedTags, setSelectedTags] = useState([]);
 
+  // this will be in redux
   const fullTagsList = [
     ...tags.age.labels,
     ...tags.breed.labels.cat,
@@ -25,6 +27,8 @@ const AnimalsScreen = () => {
     setSelectedSortOption,
     tagInput,
     setTagInput,
+    selectedTags,
+    setSelectedTags,
     tags: fullTagsList
   };
 
@@ -36,6 +40,7 @@ const AnimalsScreen = () => {
         selectedFilterTypeOption={selectedFilterTypeOption}
         selectedSortOption={selectedSortOption}
         tagInput={tagInput}
+        selectedTags={selectedTags}
       />
     </div>
   );

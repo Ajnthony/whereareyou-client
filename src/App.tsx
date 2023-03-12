@@ -26,8 +26,8 @@ const App = () => {
         <Container maxWidth="xl">
           <Routes>
             <Route index path="/" element={<AnimalsScreen />} />
-            <Route index path="/animals/:animalId" element={<AnimalDetailScreen />} />
-            <Route index path="/animals" element={<AnimalsScreen />} />
+            <Route path="/animals/:animalId" element={<AnimalDetailScreen />} />
+            <Route path="/animals" element={<AnimalsScreen />} />
             <Route path="/community/:postId" element={<PostDetailScreen />} />
             <Route path="/community" element={<ForumHomeScreen />} />
             <Route path="/about" element={<AboutScreen />} />

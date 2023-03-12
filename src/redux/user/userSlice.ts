@@ -4,7 +4,7 @@ import Api from 'api';
 import {logger} from 'helpers';
 
 const initialState = {
-  users: []
+  user: {}
 };
 
 // Slice
@@ -12,8 +12,11 @@ const slice = createSlice({
   name: 'user',
   initialState,
   reducers: {
-    getUsers: (state, action) => {
-      state.users = action.payload;
+    login: (state, action) => {
+      state.user = action.payload;
+    },
+    register: (state, action) => {
+      state.user = action.payload;
     }
   }
 });
@@ -21,21 +24,22 @@ const slice = createSlice({
 export default slice.reducer;
 
 // Actions
-const {getUsers} = slice.actions;
+const {login, register} = slice.actions;
 
-export const getAllUsers = () => async (dispatch: Dispatch) => {
+export const loginUser = () => async (dispatch: Dispatch) => {
   try {
-    const slug = 'users/';
-    const res = await Api(slug);
-    if (!res) {
-      throw new Error('Could not get users data');
-    }
-
-    const users = res.data;
-    dispatch(getUsers(users));
-    return users;
+    logger('Not implemented yet');
+    // return true;
   } catch (err) {
-    logger('Error from getAllUsers():', err);
+    logger('Error from loginUser():', err);
+    return {};
+  }
+};
+
+export const registerUser = () => async (dispatch: Dispatch) => {
+  try {
+  } catch (err) {
+    logger('Error from registerUser():', err);
     return {};
   }
 };

@@ -1,5 +1,6 @@
-import {Category, User} from 'components/types/index';
+import {Category, TagObj, User} from 'components/types/index';
 import formatDistanceToNow from 'date-fns/formatDistanceToNow';
+// import {tags} from 'components/data/tags'; // this will be in redux
 
 const {REACT_APP_DEBUG} = process.env;
 
@@ -7,6 +8,27 @@ export const logger = (...args: any[]) => {
   const isDevEnv = REACT_APP_DEBUG && REACT_APP_DEBUG === 'true' ? true : false;
   const log = isDevEnv ? console.log(...args) : () => {};
   return log;
+};
+
+// not exported
+// this is for tag filtering
+const compareArrays = (arrA: string[], arrB: string[]) => {
+  if (arrA.length !== arrB.length || arrA.toString() !== arrB.toString()) {
+    return false;
+  }
+
+  arrA = arrA.slice();
+  arrA.sort();
+  arrB = arrB.slice();
+  arrB.sort();
+
+  for (let i = 0; i < arrA.length; i++) {
+    if (arrA[i] !== arrB[i]) {
+      return false;
+    }
+  }
+
+  return true;
 };
 
 // not exported
@@ -30,8 +52,8 @@ export const handleFilterAndSort = (
   filterOptionOne: number,
   filterOptionTwo: number | null, // forum doesn't need this
   sortOption: number,
-  source: string,
-  tag: string,
+  source: string, // 'animals' or 'forum'
+  selectedTags: any[] = [],
   filters: any
 ) => {
   const acceptedSources = ['forum', 'animals'];
@@ -43,7 +65,7 @@ export const handleFilterAndSort = (
 
   if (
     (source === 'forum' && filterOptionOne === optionAll) ||
-    (source === 'animals' && filterOptionOne === optionAll && filterOptionTwo === optionAll)
+    (source === 'animals' && filterOptionOne === optionAll && filterOptionTwo === optionAll && !selectedTags.length)
   ) {
     // all animals/posts, no need to filter
     // sort only
@@ -74,16 +96,33 @@ export const handleFilterAndSort = (
       const filterByOptionTwo = (animal: any) =>
         filterOptionTwo !== optionAll ? animal.species === chosenFilterType.name : animal;
 
-      // needs more work
-      const filterByTags = (animal: any) => {
-        // animal.tags.forEach((t: any) => {
-        //   if (t.label === tag) {
-        //     return animal;
-        //   }
-        // }
-        return animal;
-      };
-      const filteredArray = arr.filter(filterByOptionOne).filter(filterByOptionTwo).filter(filterByTags);
+      let filteredArray = arr.filter(filterByOptionOne).filter(filterByOptionTwo);
+
+      // handle tag filter
+      if (selectedTags.length > 0) {
+        const selectedTagsLabels = selectedTags.map((tag: TagObj) => tag.label); // ['dot', 'cat', ...]
+        const filteredByTags = [];
+
+        filteredArray.forEach((animal) => {
+          if (selectedTags.length === 1) {
+            // if only one tag is selected
+            animal.tags.forEach((tag: TagObj) => {
+              if (selectedTagsLabels.includes(tag.label)) {
+                filteredByTags.push(animal);
+              }
+            });
+          } else {
+            // if two or more tags are selected
+            const tagsLabelsOfAnimal = animal.tags.map((tag: TagObj) => tag.label);
+            if (compareArrays(selectedTagsLabels, tagsLabelsOfAnimal) === true) {
+              filteredByTags.push(animal);
+            }
+          }
+
+          filteredArray = [...filteredByTags];
+        });
+      }
+
       return handleSortArray(filteredArray, sortOption);
     }
   }
