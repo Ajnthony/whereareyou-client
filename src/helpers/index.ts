@@ -1,6 +1,5 @@
 import {Category, TagObj, User} from 'components/types/index';
 import formatDistanceToNow from 'date-fns/formatDistanceToNow';
-// import {tags} from 'components/data/tags'; // this will be in redux
 
 const {REACT_APP_DEBUG} = process.env;
 

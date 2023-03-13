@@ -15,6 +15,7 @@ import FoundChip from 'components/reusables/FoundChip';
 import {useNavigate} from 'react-router-dom';
 import {Animal, TagObj} from 'components/types';
 import {categories} from 'components/data/categories';
+import {LANGUAGES} from 'constants';
 
 interface Props {
   selectedFilterStatusOption: number;
@@ -32,6 +33,7 @@ const AnimalsList: React.FC<Props> = ({
   selectedTags
 }) => {
   const [animalsList, setAnimalsList]: [any[], Function] = useState([]);
+  const [errorMessage, setErrorMessage]: [string, Function] = useState('');
   const navigate = useNavigate();
   const textLengthLimit: number = 70;
 
@@ -47,6 +49,25 @@ const AnimalsList: React.FC<Props> = ({
       selectedTags,
       categories.animals
     ) as Animal[];
+
+    const shouldReturnAll =
+      selectedFilterStatusOption === 1 &&
+      selectedFilterTypeOption === 1 &&
+      selectedSortOption === 1 &&
+      selectedTags.length === 0
+        ? true
+        : false;
+
+    if (shouldReturnAll === true && animalsFilteredAndSorted.length === 0) {
+      setErrorMessage(LANGUAGES.animals.noAnimalsFound);
+    } else {
+      setErrorMessage(LANGUAGES.animals.noMatchingAnimalsFound);
+    }
+
+    if (animalsFilteredAndSorted.length > 0) {
+      setErrorMessage('');
+    }
+
     setAnimalsList([...animalsFilteredAndSorted]);
   }, [selectedFilterStatusOption, selectedFilterTypeOption, selectedSortOption, selectedTags]);
 
@@ -93,7 +114,7 @@ const AnimalsList: React.FC<Props> = ({
         ))
       ) : (
         <div>
-          <p>No animals</p>
+          <p>{errorMessage ? errorMessage : ''}</p>
         </div>
       )}
     </Grid>

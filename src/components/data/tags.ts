@@ -11,20 +11,20 @@ export const tags = {
   breed: {
     labels: {
       cat: [
-        {id: 1, label: 'maine coon'},
-        {id: 2, label: 'tabby'},
-        {id: 3, label: 'shorthair'}
+        {id: 5, label: 'maine coon'},
+        {id: 6, label: 'tabby'},
+        {id: 7, label: 'shorthair'}
       ],
       dog: [
-        {id: 1, label: 'minipin'},
-        {id: 2, label: 'chihuahua'},
-        {id: 3, label: 'french bulldog'}
+        {id: 8, label: 'minipin'},
+        {id: 9, label: 'chihuahua'},
+        {id: 10, label: 'french bulldog'}
       ],
       others: [
-        {id: 1, label: 'turtle'},
-        {id: 2, label: 'snake'},
-        {id: 3, label: 'lizard'},
-        {id: 4, label: 'parrot'}
+        {id: 11, label: 'turtle'},
+        {id: 12, label: 'snake'},
+        {id: 13, label: 'lizard'},
+        {id: 14, label: 'parrot'}
       ]
     },
     color: 'success'
